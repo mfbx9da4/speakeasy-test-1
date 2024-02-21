@@ -16,7 +16,7 @@ permissions:
 jobs:
   generate:
     # uses: speakeasy-api/sdk-generation-action/.github/workflows/sdk-generation.yaml@chase/v15
-    uses: speakeasy-api/sdk-generation-action/.github/workflows/sdk-generation.yaml
+    uses: speakeasy-api/sdk-generation-action/.github/workflows/sdk-generation.yaml@main
     with:
       force: ${{ github.event.inputs.force }}
       mode: pr
