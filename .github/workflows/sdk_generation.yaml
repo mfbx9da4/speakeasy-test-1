@@ -23,6 +23,7 @@ jobs:
         - typescript
       mode: direct
       speakeasy_version: latest
+      openapi_doc_location: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.yaml
     secrets:
       github_access_token: ${{ secrets.GITHUB_TOKEN }}
       speakeasy_api_key: ${{ secrets.SPEAKEASY_API_KEY }}
