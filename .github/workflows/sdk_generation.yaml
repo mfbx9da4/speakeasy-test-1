@@ -15,8 +15,7 @@ permissions:
     - cron: 0 0 * * *
 jobs:
   generate:
-    # uses: speakeasy-api/sdk-generation-action/.github/workflows/sdk-generation.yaml@v15
-    uses: speakeasy-api/sdk-generation-action/.github/workflows/action.yaml@v15
+    uses: speakeasy-api/sdk-generation-action/.github/workflows/sdk-generation.yaml@chase/v15
     with:
       force: ${{ github.event.inputs.force }}
       mode: pr
