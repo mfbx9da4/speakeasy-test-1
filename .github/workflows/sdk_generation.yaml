@@ -16,10 +16,12 @@ permissions:
 jobs:
   generate:
     # uses: speakeasy-api/sdk-generation-action/.github/workflows/sdk-generation.yaml@chase/v15
-    uses: speakeasy-api/sdk-generation-action/.github/workflows/sdk-generation.yaml@main
+    uses: speakeasy-api/sdk-generation-action/.github/workflows/sdk-generation.yaml@v14
     with:
       force: ${{ github.event.inputs.force }}
-      mode: pr
+      languages: |
+        - typescript
+      mode: direct
       speakeasy_version: latest
     secrets:
       github_access_token: ${{ secrets.GITHUB_TOKEN }}
